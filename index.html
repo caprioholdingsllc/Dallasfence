@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fence Pros Dallas | How We Handle Fence Projects</title>
+    <meta name="description" content="Fence installation and repair in Dallas. Clear process from quote to completion. Wood, vinyl, chain link, and iron fencing.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #854d0e 0%, #a16207 100%);
+            color: white;
+            padding: 1rem 2rem;
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .phone {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .hero {
+            background: #a16207;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .process-intro {
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+            text-align: center;
+        }
+        .process-intro h2 {
+            color: #854d0e;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .process-intro p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        .process-section {
+            background: #fefce8;
+            padding: 3rem 2rem;
+            margin: 0 -2rem 3rem -2rem;
+        }
+        .process-section h2 {
+            text-align: center;
+            color: #854d0e;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .process-step {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            position: relative;
+            border-top: 4px solid #a16207;
+        }
+        .process-step .step-number {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            background: #854d0e;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .process-step h3 {
+            color: #854d0e;
+            margin-top: 1rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+        }
+        .process-step .timeline {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        .process-step p {
+            color: #666;
+            line-height: 1.7;
+        }
+        .services-section {
+            margin: 3rem 0;
+        }
+        .services-section h2 {
+            color: #854d0e;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #a16207;
+        }
+        .service-card h3 {
+            color: #854d0e;
+            margin-bottom: 0.75rem;
+        }
+        .service-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .availability-section {
+            background: white;
+            padding: 3rem 2rem;
+            margin: 3rem -2rem;
+            border-top: 3px solid #a16207;
+            border-bottom: 3px solid #a16207;
+        }
+        .availability-section h2 {
+            text-align: center;
+            color: #854d0e;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .availability-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .availability-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: #fefce8;
+            border-radius: 8px;
+        }
+        .availability-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .availability-card h3 {
+            color: #854d0e;
+            margin-bottom: 0.5rem;
+        }
+        .availability-card .time {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #a16207;
+            margin: 0.5rem 0;
+        }
+        .form-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 3rem auto;
+        }
+        .form-section h2 {
+            color: #854d0e;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .form-section .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #a16207;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #854d0e 0%, #a16207 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            opacity: 0.95;
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Fence Pros Dallas</div>
+            <div class="phone">📞 (972) 284-0913</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>How We Handle Fence Projects</h1>
+        <p>A straightforward process from estimate to completed fence installation or repair.</p>
+    </section>
+
+    <div class="container">
+        <div class="process-intro">
+            <h2>Our Step-by-Step Process</h2>
+            <p>We've streamlined fence installation and repair to be predictable and hassle-free. You'll know what to expect at every stage, from the initial estimate to final walkthrough.</p>
+        </div>
+
+        <section class="process-section">
+            <h2>From Estimate to Completion</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>On-Site Estimate</h3>
+                    <div class="timeline">⏱️ Within 2-3 Days</div>
+                    <p>We visit your property to measure, assess ground conditions, and discuss fence options. Free detailed quote provided same day or next day.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Scheduling & Permits</h3>
+                    <div class="timeline">⏱️ 1-2 Weeks</div>
+                    <p>Once approved, we schedule installation and handle any required permits. We coordinate with HOA requirements if needed.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Installation</h3>
+                    <div class="timeline">⏱️ 1-3 Days</div>
+                    <p>Our crew installs posts, sets concrete, and completes fence panels. Most residential fences finished in 1-2 days.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Final Walkthrough</h3>
+                    <div class="timeline">⏱️ Day of Completion</div>
+                    <p>Inspect completed fence together. Make sure you're satisfied before final payment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2>Fence Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Wood Fence</h3>
+                    <p>Cedar, pine, and pressure-treated wood. Privacy and picket fence styles.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Vinyl Fence</h3>
+                    <p>Low-maintenance vinyl fencing. Privacy, picket, and ranch rail styles.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Chain Link</h3>
+                    <p>Galvanized and vinyl-coated chain link. Residential and commercial applications.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Iron & Aluminum</h3>
+                    <p>Ornamental metal fencing. Decorative and security options.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Fence Repair</h3>
+                    <p>Post replacement, panel repair, gate fixes, and storm damage repair.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Gate Installation</h3>
+                    <p>Single and double gates. Manual and automatic gate operators.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="availability-section">
+            <h2>Timeline Expectations</h2>
+            <div class="availability-grid">
+                <div class="availability-card">
+                    <div class="icon">📋</div>
+                    <h3>Free Estimate</h3>
+                    <div class="time">2-3 Days</div>
+                    <p>On-site measurement and detailed quote</p>
+                </div>
+                <div class="availability-card">
+                    <div class="icon">📅</div>
+                    <h3>Scheduling</h3>
+                    <div class="time">1-2 Weeks</div>
+                    <p>From approval to start date</p>
+                </div>
+                <div class="availability-card">
+                    <div class="icon">⏰</div>
+                    <h3>Installation</h3>
+                    <div class="time">1-3 Days</div>
+                    <p>Most residential fences completed quickly</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Request Estimate</h2>
+            <p class="subtitle">Tell us about your fence project</p>
+            
+            <form id="leadForm" action="https://hook.us2.make.com/gzcbxb8x2e5xph37kjhm48ur4khvh7ir" method="POST">
+                <input type="hidden" name="site_id" value="DFW-FENCE-001">
+                <input type="hidden" name="market" value="Dallas">
+                <input type="hidden" name="industry" value="Fence Installation/Repair">
+                <input type="hidden" name="lead_type" value="Service Request">
+                <input type="hidden" name="source_url" value="fenceprosdallas.com">
+                
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Property Address *</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="project_type">Project Type *</label>
+                    <select id="project_type" name="project_type" required>
+                        <option value="">Select...</option>
+                        <option value="New Fence Installation">New Fence Installation</option>
+                        <option value="Fence Repair">Fence Repair</option>
+                        <option value="Fence Replacement">Fence Replacement</option>
+                        <option value="Gate Installation">Gate Installation</option>
+                        <option value="Not Sure">Not Sure</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fence_type">Fence Type *</label>
+                    <select id="fence_type" name="fence_type" required>
+                        <option value="">Select...</option>
+                        <option value="Wood">Wood</option>
+                        <option value="Vinyl">Vinyl</option>
+                        <option value="Chain Link">Chain Link</option>
+                        <option value="Iron/Aluminum">Iron/Aluminum</option>
+                        <option value="Not Sure">Not Sure</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Project Details *</label>
+                    <textarea id="details" name="details" required placeholder="Describe your fence needs..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Request Free Estimate</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Fence Pros Dallas. Professional Fence Installation & Repair.</p>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                window.location.href = 'thanks.html';
+            }).catch(() => {
+                window.location.href = 'thanks.html';
+            });
+        });
+    </script>
+</body>
+</html>
